@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Street League</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Street League - The ultimate platform for street sports and competitions">
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <app-root>
+      <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; background: linear-gradient(135deg, #ff9800, #2196f3);">
+        <div style="width: 80px; height: 80px; position: relative;">
+          <div style="width: 80px; height: 80px; border: 8px solid rgba(255,255,255,0.3); border-radius: 50%; border-top-color: #fff; animation: spin 1s linear infinite;"></div>
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; color: white;">🏀</div>
+        </div>
+        <p style="margin-top: 20px; font-family: 'Poppins', sans-serif; color: white; font-size: 1.5rem; font-weight: 600;">Loading Street League...</p>
+        <p style="font-family: 'Poppins', sans-serif; color: white; opacity: 0.8;">Get ready for some action!</p>
+      </div>
+      <style>
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+      </style>
+    </app-root>
+  </body>
+</html>
